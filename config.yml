@@ -18,3 +18,7 @@ fileExistenceTests:
   gid: 1000
   isExecutableBy: 'group'
 
+metadataTest:
+  workdir: "/tmp/.pure/"
+  entrypoint: ["fish", "-c"]
+  cmd: ["fishtape tests/*.test.fish"]
