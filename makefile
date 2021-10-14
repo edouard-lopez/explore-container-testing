@@ -9,3 +9,10 @@ build:
 		--build-arg FISH_VERSION=3.0 \
 		--tag=pure \
 		./
+
+run-docker:
+	docker run \
+		--interactive \
+		--tty \
+		pure:latest \
+		fish
