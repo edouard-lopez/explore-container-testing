@@ -1,6 +1,6 @@
 schemaVersion: 2.0.0
 commandTests:
-  - name: "Do we print?"
-    command: "ls | wc -l"
-    args: [""]
-    expectedOutput: ["1"]
+  - name: "First test"
+    command: "sh"
+    args: ["-c", "ls -l | wc -l"]
+    expectedOutput: ["4"]
