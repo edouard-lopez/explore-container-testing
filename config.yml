@@ -5,6 +5,11 @@ commandTests:
     args: ["-c", "ls -l | wc -l"]
     expectedOutput: ["4"]
 
+  - name: "Core utils is available?"  # should use metadataTest, waiting for https://github.com/GoogleContainerTools/container-structure-test/pull/274#issuecomment-943424309
+    command: "coreutils"
+    args: ["--version"]
+    exitCode: 0 # exists
+
   - name: "Are we using 'nemo' user?"  # should use metadataTest, waiting for https://github.com/GoogleContainerTools/container-structure-test/pull/274#issuecomment-943424309
     command: "whoami"
     expectedOutput: ["nemo"]
