@@ -5,8 +5,23 @@ commandTests:
     args: ["-c", "ls -l | wc -l"]
     expectedOutput: ["4"]
 
-  - name: "Core utils is available?"  # should use metadataTest, waiting for https://github.com/GoogleContainerTools/container-structure-test/pull/274#issuecomment-943424309
+  - name: "`coreutils` command is available?"  # should use metadataTest, waiting for https://github.com/GoogleContainerTools/container-structure-test/pull/274#issuecomment-943424309
     command: "coreutils"
+    args: ["--version"]
+    exitCode: 0 # exists
+
+  - name: "`gawk` command is available?"  # should use metadataTest, waiting for https://github.com/GoogleContainerTools/container-structure-test/pull/274#issuecomment-943424309
+    command: "gawk"
+    args: ["--version"]
+    exitCode: 0 # exists
+
+  - name: "`gzip` command is available?"  # should use metadataTest, waiting for https://github.com/GoogleContainerTools/container-structure-test/pull/274#issuecomment-943424309
+    command: "gzip"
+    args: ["--version"]
+    exitCode: 0 # exists
+
+  - name: "`tar` command is available?"  # should use metadataTest, waiting for https://github.com/GoogleContainerTools/container-structure-test/pull/274#issuecomment-943424309
+    command: "tar"
     args: ["--version"]
     exitCode: 0 # exists
 
