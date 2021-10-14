@@ -4,3 +4,12 @@ commandTests:
     command: "sh"
     args: ["-c", "ls -l | wc -l"]
     expectedOutput: ["4"]
+
+fileExistenceTests:
+- name: 'Pure Test directory exists'
+  path: '/tmp/.pure/'
+  shouldExist: true
+  permissions: 'drwxr-xr-x'
+  uid: 1000
+  gid: 1000
+  isExecutableBy: 'group'
