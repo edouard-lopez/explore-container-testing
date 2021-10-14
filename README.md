@@ -1,6 +1,6 @@
 # explore-container-testing
 
-> playing with container-structure-test
+> playing with [container-structure-test](https://github.com/GoogleContainerTools/container-structure-test/).
 
 ## Usage
 
