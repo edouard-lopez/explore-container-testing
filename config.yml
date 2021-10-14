@@ -13,3 +13,6 @@ fileExistenceTests:
   uid: 1000
   gid: 1000
   isExecutableBy: 'group'
+
+metadataTest:
+    user: "luke"
